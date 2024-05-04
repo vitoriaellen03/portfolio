@@ -100,6 +100,7 @@ a {
     text-align: center;
     justify-content: center;
 }
+
 .btns .btn {
     overflow: hidden;
     max-height: 100px;
@@ -920,6 +921,12 @@ a {
     cursor: pointer;
 }
 
+.ite {
+    background: #474747;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 1500px) {
     .carousel-item {
         padding: 20px 10%;
@@ -933,7 +940,7 @@ a {
 }
 
 .carousel-item .ano {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -1007,7 +1014,7 @@ a {
 }
 
 .op-ball {
-    margin-top: -31px;
+    margin-top: -51px;
     margin-left: 50%;
 }
 
@@ -1053,7 +1060,8 @@ a {
     cursor: pointer;
     text-align: center;
     list-style: none;
-    background: #ffff;;
+    background: #ffff;
+    ;
     padding: 20px;
     border-radius: 10px;
     min-height: 200px;
@@ -1076,7 +1084,7 @@ a {
 
 .redes .fas,
 .redes .fab {
-    
+
     font-size: 30px;
     height: auto;
     display: block;
