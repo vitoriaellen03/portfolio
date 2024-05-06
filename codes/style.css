@@ -691,7 +691,7 @@ font - font-family: Arial, sans-serif;
             top: 0;
         }
 
-        .card-galery #close {
+        .card-galery .close {
             padding: 0;
             top: 25px;
             position: absolute;
@@ -912,7 +912,7 @@ font - font-family: Arial, sans-serif;
         transition: 0.3s;
     }
 
-    #close {
+    .close {
         position: absolute;
         z-index: 1;
         top: 0px;
@@ -922,7 +922,7 @@ font - font-family: Arial, sans-serif;
         cursor: pointer;
     }
 
-    #close::before {
+    .close::before {
         content: '';
         content: "\26CC";
     }
@@ -961,8 +961,8 @@ font - font-family: Arial, sans-serif;
 
     .exibition-imgs .close {
         margin: 0;
+        right: 20px;
         padding: 0;
-        right: 0;
         margin-top: 20px;
     }
 
