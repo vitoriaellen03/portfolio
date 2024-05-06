@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 exhibitionGallery.innerHTML = `<img src="${src}" alt="exibtion-galery">`;
 
                 // Modifica o estilo para display block
-                exibitionImgs.style.display = '';
+                exibitionImgs.style.display = 'block';
 
                 // Adiciona a classe overflow-hidden aos elementos htms e gale
                 gale.classList.add('overflow-hidden');

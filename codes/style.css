@@ -940,7 +940,7 @@ font - font-family: Arial, sans-serif;
         overflow: auto;
         z-index: 100000;
         position: fixed;
-        display: block;
+        display: none;
         cursor: pointer;
 
         align-items: center;
