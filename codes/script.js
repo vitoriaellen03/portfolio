@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Mudar cor da Nav ao scrolar
+// Adicionar classe a Nav ao scrollar
 window.addEventListener('scroll', function () {
     var nav = document.querySelector('.nav');
     if (window.scrollY >= 60) {
@@ -91,8 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
 
 
 
@@ -155,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Adiciona um evento de clique ao botão "Carregar mais"
     loadMoreButton.addEventListener("click", carregarMais);
 });
-
 
 
 
@@ -244,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
 // Elemento Card
@@ -463,11 +461,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
 // Ocultar Infos
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
@@ -502,12 +495,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 // Sobre mim scroll
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector('.carousel-container');
-    const scrollOffset = 100; // Ajuste o valor conforme necessário para a quantidade de scroll desejada
-    const extraScroll = 0; // Quantidade extra de scroll para além dos 100%
+    const scrollOffset = 100; // Valor do deslocamento 100% do tamanho
+    const extraScroll = 0; // Inclui o valor de margens e paddings
 
     // Adiciona a propriedade overflow: hidden ao estilo do contêiner
     container.style.overflow = 'hidden';
@@ -604,91 +596,3 @@ document.addEventListener("DOMContentLoaded", function () {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*document.addEventListener('DOMContentLoaded', function () {
-    const events = document.querySelector('.time-content');
-const eventWidth = document.querySelector('.conteudo').offsetWidth + 10; // Largura de cada evento mais o column-gap
-let currentIndex = -1;
-let intervalId;
-
-function moveToNext() {
-currentIndex = (currentIndex + 1) % events.children.length;
-const nextPosition = -currentIndex * eventWidth;
-events.style.transform = `translateX(${nextPosition}px)`; // Move os eventos horizontalmente
-    }
-
-function startAutoSlide() {
-intervalId = setInterval(moveToNext, 5000); // Move para o próximo evento a cada 5 segundos
-    }
-
-function stopAutoSlide() {
-clearInterval(intervalId); // Para a exibição automática
-    }
-
-function handleMouseEnter() {
-stopAutoSlide(); // Pausa a exibição automática ao passar o mouse sobre a div
-    }
-
-function handleMouseLeave() {
-startAutoSlide(); // Continua a exibição automática ao tirar o mouse da div
-    }
-
-// Adicionando os eventos de mouse
-document.querySelector('.content-timeline').addEventListener('mouseenter', handleMouseEnter);
-document.querySelector('.content-timeline').addEventListener('mouseleave', handleMouseLeave);
-
-// Exibindo o conteúdo do primeiro evento ao carregar a página
-startAutoSlide(); // Inicia a exibição automática
-
-// Move para o próximo evento quando não há mouse sobre a div
-document.querySelector('.content-timeline').addEventListener('click', function () {
-moveToNext();
-    });
-
-// Move para o próximo evento ao carregar a página
-moveToNext();
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
